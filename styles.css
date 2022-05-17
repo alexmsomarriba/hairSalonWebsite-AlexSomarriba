@@ -38,7 +38,7 @@ body {
 #header .section .logo {
 	float: left;
 	background-color: #222841;
-	width: 30%;
+	width: 300px;
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
@@ -58,7 +58,8 @@ body {
 	width: 20%;
 }
 #header .section ul {
-	display: inline-block;
+	list-style-type: none;
+	display: block;
 	margin-left: 20px;
 	overflow: hidden;
 	padding: 50px 0 0;
@@ -66,7 +67,6 @@ body {
 }
 #header .section ul li {
 	border-radius: 10px;
-	background: url(../images/bg-nav-right.gif) no-repeat top right;
 	display: inline-block;
 	background-color: #222841;
 	list-style: none;
@@ -74,7 +74,6 @@ body {
 	padding: 0;
 }
 #header .section ul li a {
-	background: url(../images/bg-nav-left.gif) no-repeat top left;
 	color: #fff;
 	display: inline-block;
 	font-size: 16px;
@@ -97,20 +96,23 @@ body {
 	background: url(../images/bg-nav-left-selected.gif) no-repeat top left;
 }
 #header .article {
+	display: flex;
 	background: #fff;
 	border: 2px solid #5fb3bd;
 	border-radius: 4px;
-	margin: 50px auto 28px;
 	overflow: hidden;
 	padding: 0;
-	width: 936px;
 }
 #header .article img {
-	display: block;
+	display: flex;
 	float: left;
-	margin: 0 50px 0 0;
 	padding: 0;
+	height: 30%;
+	width: auto;
 }
+
+
+
 #header .article h1 {
 	color: #1b2130;
 	font-family: 'ChangaOne';
@@ -122,11 +124,11 @@ body {
 }
 #body {
 	margin: 0 auto;
-	min-height: 812px;
 	padding: 20px 0 50px;
-	width: 960px;
+	width: 80%;
 }
 #body > ul {
+	
 	display: flex;
 	margin: 0;
 	overflow: hidden;
@@ -460,6 +462,7 @@ body {
 	padding-bottom: 20px;
 }
 #body .blog {
+	display: flex;
 	padding: 0;
 }
 #body .content {
@@ -553,6 +556,7 @@ body {
 	border-top: 1px solid #9bd9e0;
 	margin: 0;
 	padding: 0;
+    bottom: 0;
 }
 #footer > div {
 	margin: 0 auto;
